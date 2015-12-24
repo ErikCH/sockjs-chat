@@ -1,6 +1,6 @@
 {
   "name": "sockjs-chat",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Ember Chat Addon",
   "directories": {
     "doc": "doc",
@@ -35,10 +35,13 @@
     "ember-export-application-global": "^1.0.4",
     "ember-resolver": "^2.0.3",
     "ember-disable-prototype-extensions": "^1.0.0",
-    "ember-try": "~0.0.8"
+    "ember-try": "~0.0.8",
+	"sockjs-client": "~1.0.3"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+	"sockjs",
+	"ember websockets"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",
