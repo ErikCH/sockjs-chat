@@ -1,9 +1,9 @@
 /*jshint node:true*/
 module.exports = {
-  normalizeEntityName: function() {},
+	normalizeEntityName: function() {
+	},
 
-
-  afterInstall: function(options) {
-	  return this.addBowerPackageToProject('sockjs-client');
-  }
+	afterInstall: function() {
+		return this.addBowerPackageToProject('sockjs-client', '~1.0.3');
+	}
 };
