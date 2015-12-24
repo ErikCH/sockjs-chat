@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/erikch/sockjs-chat-example",
+  "repository": "https://github.com/ErikCH/sockjs-addon-fun",
   "engines": {
     "node": ">= 0.10.0"
   },
