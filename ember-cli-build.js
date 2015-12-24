@@ -14,5 +14,6 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import('bower_components/sockjs-client/dist/sockjs-0.3.4.js');
   return app.toTree();
 };
