@@ -1,20 +1,18 @@
 import Ember from 'ember';
 import layout from '../templates/components/sockjs-chat';
 
-const $ = Ember.$;
-
 export default Ember.Component.extend({
 
 	sockjs: Ember.inject.service('sockjs'),
-	layout,
-	message:'',
+	   layout,
+	   message:'',
 
 	   init() {
 		   this._super(...arguments);
 		   this.get('sockjs').setupSockjs(this.attrs.url);
 		   this.get('sockjs').on('messageReceived',this,function(message){
-		   this.set('message',message);
-		   this._actionHandler('receiveAction',message);
+			   this.set('message',message);
+			   this._actionHandler('receiveAction',message);
 		   });
 	   },           
 	   _actionHandler(actionName, ...args) {
@@ -24,8 +22,6 @@ export default Ember.Component.extend({
 		   } else {
 			   this.sendAction(actionName,...args);
 		   }
-
-
 	   },
 
 	   actions: {              

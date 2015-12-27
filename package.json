@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/ErikCH/sockjs-addon-fun",
+  "repository": "https://github.com/ErikCH/sockjs-chat",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Erik Hanchett",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
